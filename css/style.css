@@ -101,8 +101,7 @@ textarea.form-control {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0px 0px 0px;
-  margin: 0px 20px;
+  padding: 20px 0px 0px 40px;
 }
 
 #header .logo {
