@@ -20,10 +20,6 @@ body {
   color: #fff;
   background: #ffba5a; }
 
-  .awards{
-    display: flex;
-  }
-
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -110,7 +106,7 @@ textarea.form-control {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -156,7 +152,7 @@ textarea.form-control {
   padding: 10px 0 10px 30px;
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: #252525;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -168,22 +164,7 @@ textarea.form-control {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #e9ffc6;
-}
-
-.navbar .getstarted {
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 50px;
-  color: #fff;
-  font-size: 14px;
-  border: 2px solid #47b2e4;
-  font-weight: 600;
-}
-
-.navbar .getstarted:hover {
-  color: #fff;
-  background: #31a9e1;
+  color: #252525;
 }
 
 .navbar .dropdown ul {
@@ -219,7 +200,7 @@ textarea.form-control {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #ffffff;
+  color: #252525;
 }
 
 .navbar .dropdown:hover > ul {
@@ -291,7 +272,7 @@ textarea.form-control {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: #F6F6F1;
   transition: 0.3s;
   z-index: 999;
 }
@@ -311,7 +292,7 @@ textarea.form-control {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #F6F6F1;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -324,11 +305,6 @@ textarea.form-control {
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #47b2e4;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
-  color: #37517e;
 }
 
 .navbar-mobile .dropdown ul {
@@ -363,93 +339,9 @@ textarea.form-control {
   display: block;
 }
 
-
-/* 
-.site-header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 60px 0;
-  z-index: 2;
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out; }
-
-.menu-open {
-  position: relative; }
-  .menu-open .site-header {
-    position: fixed; }
-  .menu-open .site-logo {
-    position: relative;
-    z-index: 100; }
-    .menu-open .site-logo a {
-      color: #000; }
-  .menu-open .site-navbar {
-    border: 10px solid #f8f9fa; }
-
-.site-logo {
-  padding-left: 40px; }
-  .site-logo a {
-    font-size: 30px;
-    color: #fff;
-    font-weight: bold;
-    line-height: 1;
-    font-family: "Playfair Display", times, serif; }
-    @media (max-width: 991.98px) {
-      .site-logo a {
-        font-size: 27px; } }
-
-.site-navbar {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  border: 20px solid transparent;
-  background: #fff;
-  min-height: 300px;
-  overflow-y: scroll; }
-  .site-navbar nav {
-    text-align: left; }
-    .site-navbar nav .menu {
-      font-family: myFont; }
-      .site-navbar nav .menu li a {
-        color: #353535;
-        font-size: 40px;
-        font-weight: bold;
-        padding: 5px 10px;
-        position: relative; }
-        .site-navbar nav .menu li a:hover:before {
-          width: 100%; }
-      .site-navbar nav .menu li.active a {
-        color: #ffba5a; }
-        .site-navbar nav .menu li.active a:before {
-          width: 100%; }
-  .site-navbar .extra-info a {
-    color: #000; }
-  .site-navbar .extra-info ul li a {
-    color: #000; }
-  .site-navbar .extra-info h3 {
-    font-family: "Roboto", arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: .2em;
-    color: #adb5bd;
-    margin-bottom: 30px; }
-  .site-navbar .extra-info p {
-    color: #212529; } */
-
 .full-height {
   height: 100vh;
   min-height: 700px; }
-
-/*---------------------------------------
-  HOME             
------------------------------------------*/
-
-
 /*---------------------------------------
   HOME             
 -----------------------------------------*/
@@ -469,14 +361,7 @@ textarea.form-control {
 
 #home video {
   position: fixed;
-  /* top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto; */
   z-index: -100;
-  /* transform: translateX(-50%) translateY(-50%); */
   background-size: cover;
   transition: 1s opacity;
   aspect-ratio: 2/1;
@@ -518,6 +403,7 @@ textarea.form-control {
   text-align: center;
   list-style: none;
   display: flex;
+  align-items: center;
   left: auto;
   justify-content: center;
 }
@@ -597,11 +483,11 @@ textarea.form-control {
 label{
   color:#666666;
 }
-
+.extra-site{
+  height:53vh
+}
 .site-hero {
   background-size: cover;
-  height: 40vh;
-  min-height: 450px;
   width: 100%;
   position: relative; }
   .site-hero .heading {
@@ -626,15 +512,15 @@ label{
     bottom: 0;
     right: 0; }
   .site-hero.inner-page {
-    height: 50vh;
-    min-height: 700px; }
+    min-height: 400px; }
     .site-hero.inner-page.overlay:before {
       height: 50vh;
       min-height: 700px; }
+      .bi-list::before { 
+        color: #000;}
 
 .site-hero-inner {
-  height: 50vh;
-  min-height: 500px; }
+  min-height: 400px; }
   .site-hero-inner .heading {
     font-size: 80px;
     font-family: myFont;
@@ -752,15 +638,23 @@ label{
   padding: 4em 0; }
   @media (max-width: 991.98px) {
     .section {
-      padding: 3em 0; } 
+      padding: 2em 0; } 
     .aboutdetail{
       flex-direction: column;
     }
     }
-
+    .awards{
+      display: flex;
+      margin-top: 30px;
+    }
 @media (max-width: 991.98px) {
   .lead {
-    font-size: 16px; } }
+    font-size: 16px; } 
+    .awards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }}
 
 .visit-section .heading {
   font-size: 15px;
@@ -1082,14 +976,13 @@ label{
 .primary-btn {
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 700;
 	padding: 16px 50px;
 	color: #ffffff;
 	position: relative;
 }
 
 .primary-btn.normal-btn {
-	color: #111111;
+	color: #252525;
 }
 
 .primary-btn.normal-btn:before {
@@ -1161,8 +1054,8 @@ label{
 }
 
 .footer__top__text h2 {
-	color: #000000;
-	font-size: 36px;
+	color: #252525;
+	font-size: 32px;
 }
 
 .footer__top__text p {
@@ -1935,7 +1828,7 @@ font-size: 55px;
   margin: 0; }
   .custom-breadcrumbs li {
     display: inline-block;
-    color: #000000;
+    color: #252525;
     margin: 0 4px;
     text-transform: uppercase;
     font-family: myFont;
