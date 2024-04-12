@@ -1,235 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      user-select: none;
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      color: white;
-      background: black;
-      font-family: "Cormorant Garamond", serif;
-      text-transform: uppercase;
-    }
-    h2 {
-      font-size: clamp(1rem, 5vw, 5rem);
-      font-weight: 400;
-      text-align: center;
-      letter-spacing: 0.5em;
-      margin-right: -0.5em;
-      color: #ccc;
-      width: 90vw;
-      max-width: 1200px;
-    }
-    header {
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 5%;
-      width: 100%;
-      z-index: 3;
-      height: 7em;
-      font-family: "Bebas Neue", sans-serif;
-      font-size: clamp(0.66rem, 2vw, 1rem);
-      letter-spacing: 0.5em;
-    }
-    section {
-      height: 100%;
-      width: 100%;
-      top: 0;
-      position: fixed;
-    }
-    section .outer, section .inner {
-      width: 100%;
-      height: 100%;
-      overflow-y: hidden;
-    }
-    section .bg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      background-size: cover;
-      background-position: center;
-    }
-    section .bg h2 {
-      z-index: 2;
-    }
-    section .bg .clip-text {
-      overflow: hidden;
-    }
-    .first .bg {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-    }
-    .second .bg {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-    }
-    .third .bg {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-    }
-    .fourth .bg {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-    }
-    .fifth .bg {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-      background-position: 50% 45%;
-    }
-    h2 * {
-      will-change: transform;
-    }
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sagar Saini Films</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
     
- 
-  </style>
-</head>
-<body><!--
-  Sections animate in and out on scroll. Scroll up or down and the sections will wrap around after hitting the start or end. Uses GSAP for the animations.
-  -->
-  
-  <header>
-    <div>AIR</div>
-  </header>
-  <section class="first">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg one" style="background-image: url('./images/D22.jpg');">
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
-            <img src="./images/Final thick wite copy.png" class="img-fluid" style="width: 90vh;" alt="">
-        </div>
-      </div>
-    </div>
-  
-  </section>
-  <section class="second">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg" style="background-image: url('./images/A&K\ 03.gif');">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="third">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg" style="background-image: url('./images/D30.jpg');">
-          <h2 class="section-heading">Section 3</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="fourth">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg" style="background-image: url('./images/HN182.jpg');">
-          <h2 class="section-heading">Section 4</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="fifth">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg" style="background-image: url('./images/IEM04726.jpg');">
-          <h2 class="section-heading">Link to Insta / </h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="fourth">
-    <div class="outer">
-      <div class="inner">
-        <div class="bg" style="background-image: url('./images/S&W\ 03.gif');">
-          <h2 class="section-heading">Section 6</h2>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Theme Style -->
+    <style>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-  
-  
-  <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
-    <script>
-       document.addEventListener("DOMContentLoaded", (event) => {
-gsap.registerPlugin(Observer);
-
-let sections = document.querySelectorAll("section"),
-  images = document.querySelectorAll(".bg"),
-  headings = gsap.utils.toArray(".section-heading"),
-  outerWrappers = gsap.utils.toArray(".outer"),
-  innerWrappers = gsap.utils.toArray(".inner"),
-  currentIndex = -1,
-  wrap = gsap.utils.wrap(0, sections.length),
-  animating;
-
-gsap.set(outerWrappers, { yPercent: 100 });
-gsap.set(innerWrappers, { yPercent: -100 });
-
-function gotoSection(index, direction) {
-  index = wrap(index); // make sure it's valid
-  animating = true;
-  let fromTop = direction === -1,
-      dFactor = fromTop ? -1 : 1,
-      tl = gsap.timeline({
-        defaults: { duration: 1.25, ease: "power1.inOut" },
-        onComplete: () => animating = false
-      });
-  if (currentIndex >= 0) {
-    // The first time this function runs, current is -1
-    gsap.set(sections[currentIndex], { zIndex: 0 });
-    tl.to(images[currentIndex], { yPercent: -15 * dFactor })
-      .set(sections[currentIndex], { autoAlpha: 0 });
-  }
-  gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
-  tl.fromTo([outerWrappers[index], innerWrappers[index]], { 
-      yPercent: i => i ? -100 * dFactor : 100 * dFactor
-    }, { 
-      yPercent: 0 
-    }, 0)
-    .fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
-
-  currentIndex = index;
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ipsSpacer_bottom_double {
+  margin-bottom: 30px;
+}
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ipsGrid::before, .ipsGrid::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+}
+.ipsGrid > .ipsGrid_span5 {
+  width: 40.42553191489362%;
+}
+.ipsGrid > .ipsGrid_span7 {
+  width: 57.44680851063829%;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  float: left;
+  margin-left: 2%;
+}
+.ipsGrid > [class*="ipsGrid_span"]:first-child {
+  margin-left: 0;
+}
+.feature {
+  display: flex;
+  align-items: center;
+}
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px 1px #CCCCCC;
+/*   transition: 0.3s; */
+}
+.featured-image-container .card {
+  padding: 10px;
+  height: 0;
+  padding-bottom: calc(100% - 10px);
+}
+h2.heading_large {
+  font-size: 1.8em;
+}
+img {
+  max-width: 100%;
 }
 
-Observer.create({
-  type: "wheel,touch,pointer",
-  wheelSpeed: -1,
-  onDown: () => !animating && gotoSection(currentIndex - 1, -1),
-  onUp: () => !animating && gotoSection(currentIndex + 1, 1),
-  tolerance: 10,
-  preventDefault: true
+.header-section {
+  margin: 200px auto;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}    
+</style>
+  </head>
+  <body>
+  
+    <div class="cInnerContent">
+      <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1>
+      
+      <div class="features">
+    
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="height: 90vh; background-image: url(./images/D30.jpg);">
+            <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
+            <p class="gs_reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn. <a href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any SVG shape into any other shape smoothly regardless of the number of points in each. <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to easily move any object along a path.</p>
+        </div>
+    
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="height: 90vh; background-image: url(./images/D30.jpg);">
+            <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
+            <p class="gs_reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene. <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a href="//www.pixijs.com/">Pixi.js</a> objects with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+        </div>
+    
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="height: 90vh; background-image: url(./images/D30.jpg);">
+            <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
+            <p class="gs_reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe Animate</a> and <a href="//createjs.com/easeljs">EaseJS</a> through GSAP's <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+        </div>
+    
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="height: 90vh; background-image: url(./images/D30.jpg);">
+            <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
+            <p class="gs_reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check out <a href="https://greensock.com/showcase/">our showcase</a>.</p>
+        </div>
+    
+      </div>
+    
+    </div>
+    
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+   <script>
+   function animateFrom(elem, direction) {
+  direction = direction || 1;
+  var x = 0,
+      y = direction * 100;
+  elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  elem.style.opacity = "0";
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 3.25, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
+
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    hide(elem); // assure that the element is hidden when scrolled into view
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      markers: false,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+    });
+  });
 });
 
-gotoSection(0, 1);
-       });
-// original: https://codepen.io/BrianCross/pen/PoWapLP
-// horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
-
   </script>
-</body>
+  </body>
 </html>

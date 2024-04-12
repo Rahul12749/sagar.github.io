@@ -111,6 +111,54 @@
     h2 * {
       will-change: transform;
     }
+    .offset-header {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  max-width: 500px;
+  margin: 10px 0;
+  }
+
+  span.offset-header {
+    display: block;
+    overflow: hidden;
+  }
+  /* span.offset-header > span {
+    animation-name: slideUp;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    display: block;
+  }
+  .offset-header-odd > span {
+    text-align: left;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    color: #ccc;
+  }
+  .offset-header-even > span {
+    text-align: right;
+    animation-delay: 150ms;
+    animation-fill-mode: both;
+    color: #ccc;
+  } */
+
+  @keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
     </style>
   </head>
   <body>
@@ -123,17 +171,19 @@
     <div class="outer">
       <div class="inner">
         <div class="bg one" style="background-image: url('./images/D22.jpg');">
-
-            <img src="./images/Final thick wite copy.png" class="img-fluid" style="width: 90vh;" alt="">
+          <img src="./images/Final thick wite copy.png" class="img-fluid" style="width: 90vh;" alt="">
         </div>
       </div>
     </div>
   
   </section>
-  <section class="second">
+  <section class="second" id="second">
     <div class="outer">
       <div class="inner">
         <div class="bg" style="background-image: url('./images/A&K\ 03.gif');">
+          <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <h2 class="heading_large gs_reveal">Create amazing memories</h2>
+        </div>
         </div>
       </div>
     </div>
@@ -165,7 +215,7 @@
       </div>
     </div>
   </section>
-  <section class="fourth">
+  <section class="sixth">
     <div class="outer">
       <div class="inner">
         <div class="bg" style="background-image: url('./images/S&W\ 03.gif');">
@@ -174,23 +224,16 @@
       </div>
     </div>
   </section>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-  
-  
-  <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
-    <script>
+   
+   <script>
        document.addEventListener("DOMContentLoaded", (event) => {
 gsap.registerPlugin(Observer);
 
@@ -247,5 +290,43 @@ gotoSection(0, 1);
 // horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
 
   </script>
+     <script>
+      function animateFrom(elem, direction) {
+     direction = direction || 1;
+     var x = 0,
+         y = direction * 1500;
+     elem.style.transform = "translate(" + x + "px, " + y + "px)";
+     elem.style.opacity = "0";
+     gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+       duration: 9.25, 
+       x: 0,
+       y: 0, 
+       autoAlpha: 1, 
+       ease: "expo", 
+       overwrite: "auto"
+     });
+   }
+   
+   function hide(elem) {
+     gsap.set(elem, {autoAlpha: 0});
+   }
+   
+   document.addEventListener("DOMContentLoaded", function() {
+     gsap.registerPlugin(ScrollTrigger);
+     
+     gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+       hide(elem); // assure that the element is hidden when scrolled into view
+       
+       ScrollTrigger.create({
+         trigger: elem,
+         markers: true,
+         onEnter: function() { animateFrom(elem) }, 
+         onEnterBack: function() { animateFrom(elem, -1) },
+         onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+       });
+     });
+   });
+   
+     </script>
   </body>
 </html>
