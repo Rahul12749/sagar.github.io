@@ -1,16 +1,16 @@
+@font-face {
+  font-family: 'BODY';
+  src: url(../images/Mochreh-BF64ec2a915faad.otf)
+}
 body {
-  font-family: BODY;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
   font-style: normal;
+  font-family: 'BODY';
   color: #444a4f;
   background-color: #F6F6F1;
   position: relative; }
-  @font-face {
-    font-family: 'BODY';
-    src: url(https://static1.squarespace.com/static/56a74ebd1c121044e144939b/t/62bd98c80ba3266fce5c8f0e/1656592584937/AnticDidone-Regular.ttf)
-}
 
 ::-moz-selection {
   color: #fff;
@@ -30,13 +30,8 @@ a {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", times, serif; }
+   }
 
-.font-family-serif {
-  font-family: "Playfair Display", times, serif; }
-
-.font-family-sans-serif {
-  font-family: "Roboto", arial, sans-serif; }
 
 .bg-light {
   background: #f2f4fb !important; }
@@ -490,7 +485,7 @@ label{
   width: 100%;
   position: relative; }
   .site-hero .heading {
-    font-family: "Playfair Display", times, serif;
+    
     }
   .site-hero .scroll-down {
     position: absolute;
@@ -522,7 +517,6 @@ label{
   min-height: 400px; }
   .site-hero-inner .heading {
     font-size: 80px;
-    font-family: myFont;
     color: #fff;
     line-height: 1;
     }
@@ -658,7 +652,7 @@ label{
 .visit-section .heading {
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Roboto", arial, sans-serif;
+  
   color: #b3b3b3;
   letter-spacing: .2em;
   margin-bottom: 30px; }
@@ -687,7 +681,6 @@ label{
 
 .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
   font-size: 60px;
-  font-family: myFont;
   }
   @media (max-width: 991.98px) {
     .heading-serif, .heading, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
@@ -746,7 +739,6 @@ label{
   .post .media-custom .media-body {
     padding: 10px 30px; }
   .post .media-custom .media-body p {
-    font-family: myFont;
     margin: 0;
     font-size: 30px;
     font-weight: 600;
@@ -764,12 +756,10 @@ label{
   font-size: 12px; }
 
   .packages{
-    font-family: allura;
     font-size: 60px;
     color: #252525;
   }
   .package{
-    font-family: myFont;
     color: #77614c;
   }
 
@@ -1105,7 +1095,6 @@ label{
 .footer__widget h6 {
 	color: #ffffff;
 	font-weight: 600;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-bottom: 30px;
 }
 
@@ -1126,7 +1115,6 @@ label{
 .footer__address h6 {
 	color: #ffffff;
 	font-weight: 600;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-bottom: 30px;
 }
 
@@ -1194,7 +1182,7 @@ label{
   .side-box .heading, .sidebar-search .heading {
     font-size: 18px;
     margin-bottom: 30px;
-    font-family: "Roboto", arial, sans-serif; }
+     }
 
 .post-list li {
   margin-bottom: 20px; }
@@ -1230,13 +1218,13 @@ label{
     border-color: #343a40; }
 
 .contact-section .contact-info p {
-  /* font-family: "Playfair Display", times, serif; */
+  /*  */
   font-size: 16px;
   margin-bottom: 20px; }
   .contact-section .contact-info p .d-block {
     font-size: 12px;
     font-weight: bold;
-    font-family: "Roboto", arial, sans-serif;
+    
     text-transform: uppercase; }
 
     input[type=text] {
@@ -1250,25 +1238,7 @@ label{
       font-weight: 400;
     }
 
-    @font-face {
-      font-family: myFont;
-      src: url(../fonts/FontsFree-Net-Butler_Ultra_Light.ttf);
-    }
-    @font-face {
-      font-family: myFon;
-      src: url(../fonts/BonVivant-Regular.ttf);
-    }
-    
-    @font-face {
-      font-family: allura;
-      src: url(../Allura-Regular.ttf);
-    }
-    .main-content h1{
-      font-family: myFont;
-    }
-
     .coimg::after{
-  font-family: myFon;
       content: "is that a yes?";
   display: block;
  position: absolute;
@@ -1830,7 +1800,6 @@ font-size: 55px;
     color: #252525;
     margin: 0 4px;
     text-transform: uppercase;
-    font-family: myFont;
     font-size: 14px;
     letter-spacing: .1em;
     }
@@ -1900,12 +1869,10 @@ font-size: 55px;
           font-size: 5rem;
           letter-spacing: 5px;
           word-spacing: 13px;
-          font-family: try5;
           color: #252525;
         }
           
           @font-face {
-            font-family: 'try5';
             src: url(../MrDeHaviland-Regular.ttf);
         }
            audio{
