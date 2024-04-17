@@ -236,8 +236,9 @@ video{
   min-height: 100%;
   height: 100%;
   background: white;
-  position: relative;
   z-index: 0;
+  margin-right: 10rem;
+
 }
 .content h1 {
   padding: 75px 0 30px 0;
@@ -301,16 +302,63 @@ video{
     transform: translateY(150px);
   }
 }
+.popuptext{
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 15rem;
+  font-family: 'BODY';
+}
+.brief{
+ font-size: 10px;
+ font-family: "Source Sans Pro", sans-serif;
+ text-transform:capitalize;
+}
+
     </style>
   </head>
-  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" cz-shortcut-listen="true">
-  
+  <body>
+    <header class="site-header js-site-header">
+      <div class="container-fluid">
+        <div class="row align-items-end">
+          <div class="col-6 col-lg-8 site-logo text-right" data-aos="fade"><a href="index.html">ART INTIMACY ROMANCE</a></div>
+          <div class="col-6 col-lg-4">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle" style="transform: rotate(90deg);"  data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-6 mx-auto">
+                      <ul class="list-unstyled menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="photography.html">Stories</a></li>
+                        <li><a href="films.html">Films</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     
   <section class="second" id="second">
       <div class="outer">
         <div class="inner">
           <div class="bg">
-            <video autoplay muted loop style="position: absolute;">
+            <video autoplay muted loop playsinline style="position: absolute;">
               <source src="./images/02.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>    
@@ -318,10 +366,27 @@ video{
               <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" alt=""></h2>
             </div>
             <div id="modal-container">
-                  <video autoplay muted loop style="position: absolute;">
+                  <video autoplay muted loop style="position: absolute; height: -webkit-fill-available;">
                     <source src="./images/05.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video> 
+                  <div class="row d-flex text-center flex-column justify-content-center align-items-center popuptext">
+                    <div class="col-lg-10">  
+                    <div> 
+                      <div style="margin-left: 12rem;"><strong>art</strong> of emotion</div>
+                      <div style="margin-right: 11.5rem;">  aura of <strong>Intimacy</strong></div>
+                      <div style="margin-left: 11rem;">  <strong>romance</strong> of lifetime</div>
+                      </div>  
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="brief"> Weaving our passion into the true essence of love between two souls
+                        for creating an invaluable treasure of memories is our ultimate goal.
+                        Our frames reflect every little shower of expression and our films blooms with passion.
+                        Feeling each little fleeting moments brfore they pass in a flash,
+                        Each smile frozen forever.
+                      </div>  
+                    </div>
+                </div>
             </div>
             <div class="content position-absolute">
               <div class="buttons">
