@@ -288,7 +288,7 @@ textarea.form-control {
   }
   }
   .site-navbar nav {
-    text-align: left; }
+    text-align: center; }
     .site-navbar nav .menu {
       font-family: 'BODY'; }
       .site-navbar nav .menu li a {
@@ -327,9 +327,6 @@ textarea.form-control {
   min-height: 700px;
   width: 100%;
   position: relative; }
-  .site-hero .heading {
-    font-family: "Source Sans Pro", sans-serif
-    font-weight: bold; }
   .site-hero .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -360,7 +357,7 @@ textarea.form-control {
   min-height: 700px; }
   .site-hero-inner .heading {
     font-size: 80px;
-    font-family: "Source Sans Pro", sans-serif
+    font-family: 'BODY';
     color: #fff;
     line-height: 1; }
     @media (max-width: 991.98px) {
@@ -630,11 +627,6 @@ label{
 
 .site-hero-inner {
   min-height: 400px; }
-  .site-hero-inner .heading {
-    font-size: 80px;
-    color: #fff;
-    line-height: 1;
-    }
     @media (max-width: 991.98px) {
       .site-hero-inner .heading {
         font-size: 40px; } }
@@ -1920,6 +1912,7 @@ label{
     letter-spacing: .1em;
     }
     .custom-breadcrumbs li a {
+      font-family: 'BODY';
       font-weight: normal; }
       .custom-breadcrumbs li a:hover {
         color: #fff; }
