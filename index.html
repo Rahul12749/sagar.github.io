@@ -337,6 +337,27 @@ video{
     color: #956b6b;
 }
 
+swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     </style>
   </head>
   <body>
@@ -385,7 +406,7 @@ video{
               Your browser does not support the video tag.
             </video>    
             <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-              <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" alt=""></h2>
+              <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" loading="lazy" alt=""></h2>
             </div>
             <div id="modal-container">
                   <video autoplay muted loop style="position: absolute; bottom: 0; width: -webkit-fill-available;">
@@ -424,7 +445,26 @@ video{
     <section class="second" id="second">
       <div class="outer">
         <div class="inner">
-          <div class="bg" style="background-image: url('./images/Slide\ 2.jpg');">
+          <div class="bg">
+            <swiper-container class="mySwiper" space-between="30" loop="true" autoplay-delay="1000" effect="fade" autoplay-disable-on-interaction="false">
+              <swiper-slide>
+                                <img src="./images/SS1.jpg" class="img-fluid" loading="lazy" alt="">
+              </swiper-slide>
+              <swiper-slide>
+                                <img src="./images/SS2.jpg" class="img-fluid" loading="lazy" alt="">
+              </swiper-slide>
+              <swiper-slide>
+                                <img src="./images/SS3.jpg" class="img-fluid" loading="lazy" alt="">
+              </swiper-slide>
+              <swiper-slide>
+                                <img src="./images/SS4.jpg" class="img-fluid" loading="lazy" alt="">
+              </swiper-slide>
+            </swiper-container>
+          
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
           </div>
         </div>
       </div>
@@ -547,44 +587,7 @@ video{
   // horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
   
     </script>
-       <script>
-        function animateFrom(elem, direction) {
-       direction = direction || 1;
-       var x = 0,
-           y = direction * 1500;
-       elem.style.transform = "translate(" + x + "px, " + y + "px)";
-       elem.style.opacity = "0";
-       gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-         duration: 9.25, 
-         x: 0,
-         y: 0, 
-         autoAlpha: 1, 
-         ease: "expo", 
-         overwrite: "auto"
-       });
-     }
-     
-     function hide(elem) {
-       gsap.set(elem, {autoAlpha: 0});
-     }
-     
-     document.addEventListener("DOMContentLoaded", function() {
-       gsap.registerPlugin(ScrollTrigger);
-       
-       gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
-         hide(elem); // assure that the element is hidden when scrolled into view
-         
-         ScrollTrigger.create({
-           trigger: elem,
-           markers: false,
-           onEnter: function() { animateFrom(elem) }, 
-           onEnterBack: function() { animateFrom(elem, -1) },
-           onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
-         });
-       });
-     });
-     
-       </script>
+   
     <script>
       $('.button').click(function(){
   var buttonId = $(this).attr('id');
