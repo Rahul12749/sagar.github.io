@@ -114,48 +114,11 @@
     display: block;
     overflow: hidden;
   }
-
-  .knowmore{
-    border: 5px solid;
-    padding: 12px 23px;
-    bottom: 15%;
-    letter-spacing: 0.4em;
-    font-family: 'BODY';
-    position: absolute;
-  }
-  .knowmorei{
-    padding: 12px 23px;
-    bottom: 15%;
-    position: absolute;
-  }
-  .knowmore:hover{
-    color: #fff;
-
-  }
   .review{
     background-color: #fff;
     opacity: 0.5;
     color: #000;
   }
-  /* span.offset-header > span {
-    animation-name: slideUp;
-    animation-duration: 8s;
-    animation-timing-function: ease-in;
-    display: block;
-  }
-  .offset-header-odd > span {
-    text-align: left;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    color: #ccc;
-  }
-  .offset-header-even > span {
-    text-align: right;
-    animation-delay: 150ms;
-    animation-fill-mode: both;
-    color: #ccc;
-  } */
-
   @keyframes slideUp {
     0%,
     50% {
@@ -170,10 +133,7 @@
     
     }
   }
-  
-* {
-  box-sizing: border-box;
-}
+ 
 html, body {
   height: 100%;
  }
@@ -219,9 +179,7 @@ html.modal-active, body.modal-active {
 #modal-container{
   position: absolute;
 }
-video{
-  width: -webkit-fill-available;
-}
+
 #modal-container h2 {
   font-size: 25px;
   line-height: 25px;
@@ -316,55 +274,13 @@ video{
     transform: translateY(150px);
   }
 }
-.popuptext{
-  text-transform: uppercase;
-  font-size: 32px;
-  color: #fff;
-  margin-top: 15rem;
-  font-family: 'BODY';
-}
-.brief{
- font-size: 14px;
- font-family: "Source Sans Pro", sans-serif;
- text-transform:capitalize;
-}
-.section-head{
-  font-size: 44px;
-    position: absolute;
-    top: 20%;
-    letter-spacing: 0.0em;
-    font-family: 'BODY';
-    color: #956b6b;
-}
-
-swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
     </style>
   </head>
   <body>
     <header class="site-header js-site-header">
       <div class="container-fluid">
         <div class="row align-items-end">
-          <div class="col-6 col-lg-8 site-logo text-right" data-aos="fade"><a href="index.html">ART INTIMACY ROMANCE</a></div>
+          <div class="col-6 col-lg-8 site-logo text-lg-right" data-aos="fade"><a href="index.html">ART INTIMACY ROMANCE</a></div>
           <div class="col-6 col-lg-4">
 
 
@@ -379,8 +295,8 @@ swiper-container {
               <nav role="navigation">
                 <div class="container">
                   <div class="row full-height align-items-center">
-                    <div class="col-md-6">
-                      <ul class="list-unstyled menu">
+                    <div class="col-md-12">
+                      <ul class="list-unstyled menu text-center">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="photography.html">Stories</a></li>
@@ -409,16 +325,16 @@ swiper-container {
               <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" loading="lazy" alt=""></h2>
             </div>
             <div id="modal-container">
-                  <video autoplay muted loop style="position: absolute; bottom: 0; width: -webkit-fill-available;">
+                  <video autoplay muted loop style="position: absolute; bottom: 0;">
                     <source src="./images/05.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video> 
                   <div class="row d-flex text-center flex-column justify-content-center align-items-center popuptext">
                     <div class="col-lg-10">  
                     <div> 
-                      <div style="margin-left: 9rem;"><strong>art</strong> of emotion</div>
-                      <div style="margin-right: 14.5rem;">  aura of <strong>Intimacy</strong></div>
-                      <div style="margin-left: 9rem;">  <strong>romance</strong> of lifetime</div>
+                      <div class="air1"><strong>art</strong> of emotion</div>
+                      <div class="air2">  aura of <strong>Intimacy</strong></div>
+                      <div class="air3">  <strong>romance</strong> of lifetime</div>
                       </div>  
                     </div>
                     <div class="col-lg-5">
@@ -448,16 +364,16 @@ swiper-container {
           <div class="bg">
             <swiper-container class="mySwiper" space-between="30" loop="true" autoplay-delay="1000" effect="fade" autoplay-disable-on-interaction="false">
               <swiper-slide>
-                                <img src="./images/SS1.jpg" class="img-fluid" loading="lazy" alt="">
+                                <img src="./images/SS1.jpg" loading="lazy" alt="">
               </swiper-slide>
               <swiper-slide>
-                                <img src="./images/SS2.jpg" class="img-fluid" loading="lazy" alt="">
+                                <img src="./images/SS2.jpg" loading="lazy" alt="">
               </swiper-slide>
               <swiper-slide>
-                                <img src="./images/SS3.jpg" class="img-fluid" loading="lazy" alt="">
+                                <img src="./images/SS3.jpg" loading="lazy" alt="">
               </swiper-slide>
               <swiper-slide>
-                                <img src="./images/SS4.jpg" class="img-fluid" loading="lazy" alt="">
+                                <img src="./images/SS4.jpg" loading="lazy" alt="">
               </swiper-slide>
             </swiper-container>
           
@@ -473,14 +389,14 @@ swiper-container {
       <div class="outer">
         <div class="inner">
           <div class="bg" style="background-image: url('./images/SLIDE\ 3a.jpg');">
-            <div class="section-heading row d-flex justify-content-center align-items-center mx-5">     
-              <div class="col-lg-3 mx-3">
+            <div class="section-heading row d-lg-flex justify-content-center align-items-center mx-5 d-sm-none">     
+              <div class="col-lg-3 col-3 mx-3">
                 <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
               </div>     
-              <div class="col-lg-3 mx-5">
+              <div class="col-lg-3 col-3 mx-5">
                 <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius.</div>
               </div>     
-              <div class="col-lg-3 mx-3">
+              <div class="col-lg-3 col-3 mx-3">
                 <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
               </div>     
             </div>
@@ -502,7 +418,7 @@ swiper-container {
         <div class="inner">
           <div class="bg" style="background-image: url('./images/Slide\ 5.jpg');">
             <h2 class="section-head"> WE ARE HERE</h2>
-            <div class="position-absolute knowmorei d-flex justify-content-around" style="width: 50%;">
+            <div class="position-absolute knowmorei d-flex justify-content-around ">
             <img src="./images/fearless.png" class="img-fluid" style="width: 10%;" alt="">
             <img src="./images/wedmegood.png" class="img-fluid" style="width: 10%;" alt="">
             <img src="./images/weddingsutra.png" class="img-fluid" style="width: 10%;" alt="">
