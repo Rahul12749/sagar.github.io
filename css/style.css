@@ -9,7 +9,7 @@ body {
   font-style: normal;
   font-family: "Source Sans Pro", sans-serif;
   color: #444a4f;
-  background-color: #F6F6F1;
+  background-color: #fff;
   position: relative; }
   video{
     width: -webkit-fill-available;
@@ -385,8 +385,6 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.45);
     content: "";
     position: absolute;
-    height: 100vh;
-    min-height: 700px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -1185,7 +1183,7 @@ label{
 
 .footer {
 	padding-top: 90px;
-  background: #F6F6F1;
+  background: #fff;
   color: #4E4E4E;
 }
 
