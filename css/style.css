@@ -14,7 +14,53 @@ body {
   video{
     width: -webkit-fill-available;
   }
-  
+  /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #b1948e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .popuptext{
   text-transform: uppercase;
   font-size: 32px;
@@ -335,7 +381,7 @@ textarea.form-control {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     color: #fff; }
-  .site-hero.overlay:before {
+  .overlay:before {
     background: rgba(0, 0, 0, 0.45);
     content: "";
     position: absolute;
@@ -348,7 +394,7 @@ textarea.form-control {
   .site-hero.inner-page {
     height: 50vh;
     min-height: 700px; }
-    .site-hero.inner-page.overlay:before {
+    .inner-page.overlay:before {
       height: 50vh;
       min-height: 700px; }
 
@@ -1582,10 +1628,7 @@ label{
   -moz-perspective: 1000;
   -ms-perspective: 1000;
   perspective: 1000;
-  -ms-transform: perspective(1000px);
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d; }
+ }
  
   .block-2, .block-2 .front, .block-2 .back {
     width: 100%;
@@ -1595,7 +1638,6 @@ label{
     -webkit-transform-style: preserve-3d;
     -ms-transition: 0.6s;
     -moz-transition: 0.6s;
-    -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     -o-transition: 0.6s;
@@ -1980,10 +2022,6 @@ label{
           word-spacing: 13px;
           color: #252525;
         }
-          
-          @font-face {
-            src: url(../MrDeHaviland-Regular.ttf);
-        }
            audio{
             margin: 20px 0px;
             width:100%;
@@ -1991,3 +2029,13 @@ label{
           audio::-webkit-media-controls-panel {
             background-color: #fff;
           }
+          .perr{
+            display: block;
+          }
+          @media (max-width: 991.98px) {
+            .perr{
+          display: none;  }
+          .perrr{
+            padding: 10px;
+          }
+            }

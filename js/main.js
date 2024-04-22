@@ -87,6 +87,15 @@
   onscroll(document, navbarlinksActive)
 
   /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+  /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
