@@ -252,7 +252,16 @@ textarea.form-control {
     font-size: 20px;
     color: #fff;
     line-height: 1;}
+    .third .bg .lazy,.fourth .bg .lazy,.fifth .bg .lazy,.sixth .bg .lazy{
+      position: absolute;
+      width: -webkit-fill-available;
+    }
     @media (max-width: 991.98px) {
+      .third .bg .lazy,.fourth .bg .lazy,.fifth .bg .lazy,.sixth .bg .lazy{
+        position: absolute;
+        width: auto;
+        height: -webkit-fill-available;
+      }
       .site-logo a {
         font-size: 17px; }
         video{
@@ -304,7 +313,7 @@ textarea.form-control {
       }
       .knowmorei{
         color: #fff;
-        padding: 12px 23px;
+        padding: 12px 10px 0 30px;
         bottom: 15%;
         position: absolute;
         width: 100%;
@@ -390,7 +399,7 @@ textarea.form-control {
     bottom: 0;
     right: 0; }
   .site-hero.inner-page {
-    height: 50vh;
+    height: 100vh;
     min-height: 700px; }
     .inner-page.overlay:before {
       height: 50vh;
@@ -2031,9 +2040,34 @@ label{
             display: block;
           }
           @media (max-width: 991.98px) {
+            .bgslide img{
+              position: absolute;
+              height: -webkit-fill-available;
+              background-size: cover;
+            }
             .perr{
           display: none;  }
           .perrr{
             padding: 10px;
           }
+          .reviewcen{
+            margin: 3rem 1rem 0 1rem;
+          }
             }
+            .site-hero.overlay:before {
+              background: rgba(0, 0, 0, 0.45);
+              content: "";
+              position: absolute;
+              height: 100vh;
+              min-height: 700px;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0; }
+            .site-hero.inner-page {
+              height: 50vh;
+              min-height: 700px; }
+              .site-hero.inner-page.overlay:before {
+                height: 50vh;
+                min-height: 700px; }
+          

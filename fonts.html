@@ -31,7 +31,14 @@
 @media (max-width: 991.98px) {
   .perr{
 display: none;  }
-  }
+.img-fluid{
+  background-size: cover;
+    background-position: center;
+    height: -webkit-fill-available;
+    position: absolute;
+}  
+}
+
   </style>
 </head>
 
@@ -39,7 +46,9 @@ display: none;  }
       <section class="third">
       <div class="outer">
         <div class="inner">
-          <div class="bg" style="background-image: url('./images/SLIDE\ 3a.jpg');">
+          <div class="bg">
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE3a.jpg" class="lazy img-fluid" />
+
             <div class="section-heading row d-lg-flex justify-content-center align-items-center mx-5">     
               <div class="col-lg-3 col-3 mx-3 perr">
                 <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
@@ -55,6 +64,7 @@ display: none;  }
         </div>
       </div>
     </section>
+    <script src="./js/load-image.js"></script>
 </body>
 
 </html>
