@@ -11,8 +11,16 @@ body {
   color: #444a4f;
   background-color: #fff;
   position: relative; }
-  video{
-    width: -webkit-fill-available;
+
+  @media (max-width: 375.98px) {
+    .desk-image{
+      display: none;
+    }
+    .mobile-image{
+      display: block;
+      width: -webkit-fill-available;
+      height:auto;
+    }
   }
   /*--------------------------------------------------------------
 # Preloader
@@ -74,13 +82,13 @@ body {
  text-transform:capitalize;
 }
 .air1{
-  margin-left: 9rem;
+  margin-left: 11rem;
 }
 .air2{
-  margin-left: 14.5rem;
+  margin-left: -11.5rem;
 }
 .air3{
-  margin-left: 9rem;
+  margin-left: 11rem;
 }
 
 swiper-container {
@@ -113,13 +121,31 @@ swiper-slide img {
 }
 
 .knowmore{
-  border: 5px solid;
+  font-size: 16px;
+  border: 1px solid;
   padding: 12px 23px;
   bottom: 15%;
   letter-spacing: 0.4em;
   font-family: 'BODY';
   position: absolute;
   color: #fff;
+}
+
+.content .buttons .button {
+  display: inline-block;
+  text-align: center;
+  width: max-content;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'BODY';
+  color: #efefef;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid;
+  position: absolute;
+  bottom: 14px;
 }
 .knowmorei{
   color: #fff;
@@ -226,7 +252,6 @@ textarea.form-control {
     -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1); }
     .site-header.scrolled .site-menu-toggle {
-      top: 10px;
       position: relative; }
       .site-header.scrolled .site-menu-toggle span {
         background: #000; }
@@ -256,7 +281,75 @@ textarea.form-control {
       position: absolute;
       width: -webkit-fill-available;
     }
+    .mobile-image{
+      display: none;
+    }
+    .desk-image{
+      display: block;
+    }
+    .mobile-video{
+      display: none;
+    }
+    .desk-video{
+      display: block;
+    }
+    .mobile-hvideo{
+      display: none;
+    }
+    .desk-hvideo{
+      display: block;
+      width: -webkit-fill-available;
+    }
+    .mobile-fvideo{
+      display: none;
+    }
+    .desk-fvideo{
+      display: block;
+      width: -webkit-fill-available;
+    }
+    .homevideo{
+      width: -webkit-fill-available;
+    }
+    .contacthigh{
+      height: 8rem;
+    }
+    .extra-site{
+      height:30vh
+    }
+    @media (max-width: 1024.98px) {
+      .desk-video{
+        display: block;
+        height: -webkit-fill-available;
+        width:auto;
+      }
+      .desk-hvideo{
+        display: block;
+        height: -webkit-fill-available;
+        width:auto;
+      }
+      .homevideo{
+        height: -webkit-fill-available;
+        width: auto;
+      }
+    }
+
     @media (max-width: 991.98px) {
+      .mobile-video{
+        display: none;
+      }
+      .desk-video{
+        display: block;
+        height: -webkit-fill-available;
+        width: auto;
+      }
+      .desk-hvideo{
+        display: block;
+        height: -webkit-fill-available;
+        width: auto;
+      }
+      .mobile-hvideo{
+        display: none;
+      }
       .third .bg .lazy,.fourth .bg .lazy,.fifth .bg .lazy,.sixth .bg .lazy{
         position: absolute;
         width: auto;
@@ -264,9 +357,9 @@ textarea.form-control {
       }
       .site-logo a {
         font-size: 17px; }
-        video{
+        /* video{
           width: auto;
-        } 
+        }  */
       
       .popuptext{
         text-transform: uppercase;
@@ -302,15 +395,33 @@ textarea.form-control {
       }
         
       .knowmore{
-        border: 5px solid;
+        border: 1px solid;
         padding: 12px 23px;
         bottom: 15%;
-        font-size: 16px;
+        font-size: 12px;
         letter-spacing: 0.2em;
         font-family: 'BODY';
         position: absolute;
         color: #fff;
       }
+      
+.content .buttons .button {
+  display: inline-block;
+  text-align: center;
+  width: max-content;
+  padding: 10px 15px;
+  margin: 0 0 0 25px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'BODY';
+  color: #efefef;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid;
+  position: absolute;
+  bottom: 14px;
+}
       .knowmorei{
         color: #fff;
         padding: 12px 10px 0 30px;
@@ -322,7 +433,84 @@ textarea.form-control {
         color: #fff;
       }
       }
-
+      @media (max-width: 425.98px) {
+        .contacthigh{
+          height: 5rem;
+        }
+        .extra-site{
+          height:15vh;
+        }
+        .mobile-hvideo{
+          display: block;
+          width: -webkit-fill-available;
+          height: auto;
+        }
+        .desk-hvideo{
+          display: none;
+        }
+        .mobile-fvideo{
+          display: block;
+          width: -webkit-fill-available;
+          height: auto;
+        }
+        .desk-fvideo{
+          display: none;
+        }
+      }
+      @media (max-width: 375.98px) {
+        .desk-image{
+          display: none;
+        }
+        .mobile-image{
+          display: block;
+          width: -webkit-fill-available;
+          height:auto;
+        }
+        .mobile-video{
+          display: block;
+          width: -webkit-fill-available;
+          height: auto;
+        }
+        .desk-video{
+          display: none;
+        }
+        .mobile-hvideo{
+          display: block;
+          width: -webkit-fill-available;
+          height: auto;
+        }
+        .desk-hvideo{
+          display: none;
+        }
+      }
+      @media (max-width: 320.98px) {
+        .desk-image{
+          display: none;
+        }
+        .mobile-image{
+          display: block;
+          width: -webkit-fill-available;
+          height:auto;
+        }
+        .mobile-hvideo{
+          display: block;
+          height: -webkit-fill-available;
+          width: auto;
+        }
+        .mobile-video{
+          display: block;
+          height: -webkit-fill-available;
+          top: 0;
+          width: auto;
+        }
+        .desk-video{
+          display: none;
+        }
+        .desk-hvideo{
+          display: none;
+        }
+      }
+      
 .site-navbar {
   position: fixed;
   display: none;
@@ -571,18 +759,18 @@ textarea.form-control {
 
 .portfolio-isotope .portfolio-flters li {
   cursor: pointer;
-  padding: 0;
+  padding: 0 17px;
   font-size: 24px;
   font-weight: 500;
-  margin: 0 30px;
+  margin: 0 ;
   line-height: 1;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 575px) {
-  .projects .portfolio-flters li {
-    font-size: 14px;
+@media (max-width: 991.98px) {
+  .portfolio-isotope .portfolio-flters li {
+    font-size: 16px;
     margin: 0 5px;
   }
 }
@@ -644,9 +832,7 @@ textarea.form-control {
 label{
   color:#666666;
 }
-.extra-site{
-  height:30vh
-}
+
 .site-hero {
   background-size: cover;
   width: 100%;
@@ -2044,6 +2230,9 @@ label{
               position: absolute;
               height: -webkit-fill-available;
               background-size: cover;
+            }
+            .contactform{
+              margin: 0 1rem;
             }
             .perr{
           display: none;  }

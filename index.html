@@ -117,6 +117,7 @@
     background-color: #fff;
     opacity: 0.5;
     color: #000;
+    font-size: 14px;
   }
   @keyframes slideUp {
     0%,
@@ -221,22 +222,6 @@ html.modal-active, body.modal-active {
   padding: 0;
   text-align: center;
 }
-.content .buttons .button {
-  display: inline-block;
-  text-align: center;
-  width: max-content;
-  padding: 10px 15px;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: 'BODY';
-  color: #efefef;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  border: 3px solid;
-  position: absolute;
-  bottom: 14px;
-}
 .content .buttons .button:hover {
   color: white;
 }
@@ -311,22 +296,26 @@ html.modal-active, body.modal-active {
       </div>
     </header>
     
-  <section class="second" id="second">
+    <section class="second" id="second">
       <div class="outer">
         <div class="inner">
           <div class="bg">
-            <video autoplay muted loop playsinline style="position: absolute;">
-              <source src="./images/02.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline class="homevideo" style="top: 0; position: absolute;">
+              <source src="./images/001.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>    
             <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
               <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" loading="lazy" alt=""></h2>
             </div>
             <div id="modal-container">
-                  <video autoplay muted loop style="position: absolute; bottom: 0;">
-                    <source src="./images/05.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video> 
+              <video autoplay muted loop playsinline class="desk-hvideo" style="bottom: 0; position: absolute;">
+                <source src="./images/05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>  
+              <video autoplay muted loop playsinline class="mobile-hvideo" style="bottom: 0; position: absolute;">
+                <source src="./images/002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>  
                   <div class="row d-flex text-center flex-column justify-content-center align-items-center popuptext">
                     <div class="col-lg-10">  
                     <div> 
@@ -354,6 +343,8 @@ html.modal-active, body.modal-active {
         </div>
       </div>
     </section>
+  
+
   
    
     <section class="second" id="second">
@@ -391,7 +382,8 @@ html.modal-active, body.modal-active {
       <div class="outer">
         <div class="inner">
           <div class="bg" >
-            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE3a.jpg" class="lazy"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE3a.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/3.jpg" class="lazy mobile-image"/>
 
             <div class="section-heading row d-lg-flex justify-content-center align-items-center mx-lg-5 d-sm-none">     
               <div class="col-lg-3 col-3 mx-3 perr">
@@ -414,7 +406,8 @@ html.modal-active, body.modal-active {
       <div class="outer">
         <div class="inner">
           <div class="bg" >
-            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE4a.jpg" class="lazy" />
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE4a.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/4.jpg" class="lazy mobile-image"/>
 
             <a href="photography.html" class="knowmore">Explore Our Stories</a>
           </div>
@@ -442,7 +435,16 @@ html.modal-active, body.modal-active {
       <div class="outer">
         <div class="inner">
           <div class="bg" >
-            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/A&K03.gif" class="lazy" />
+            <video autoplay muted loop playsinline class="desk-video" style="top: 0; position: absolute;">
+              <source src="./images/004.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+            <video autoplay muted loop playsinline class="mobile-video" style="top: 0; position: absolute;">
+              <source src="./images/003.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+            <!-- <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/3.jpg" class="lazy mobile-image"/> -->
 
               <a href="photography.html" class="knowmore">Explore Our Films</a>
           </div>

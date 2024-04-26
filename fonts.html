@@ -1,70 +1,437 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sagar Saini Films</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
 
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Montserrat:wght@300;400&family=Oswald:wght@300;400&family=Playfair+Display:ital,wght@1,800&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    h2 {
+      font-size: clamp(1rem, 5vw, 5rem);
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.5em;
+      margin-right: -0.5em;
+      color: #ccc;
+      width: 90vw;
+      max-width: 1200px;
+    }
+    header {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      width: 100%;
+      z-index: 3;
+      height: 7em;
+      font-size: clamp(0.66rem, 2vw, 1rem);
+      letter-spacing: 0.5em;
+    }
+    section {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      position: fixed;
+    }
+    section .outer, section .inner {
+      width: 100%;
+      height: 100%;
+      overflow-y: hidden;
+    }
+    section .bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    section .bg h2 {
+      z-index: 2;
+    }
+    section .bg .clip-text {
+      overflow: hidden;
+    }
+    /* .first .bg {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    .second .bg {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    .third .bg {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    .fourth .bg {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    .fifth .bg {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background-position: 50% 45%;
+    } */
+    h2 * {
+      will-change: transform;
+    }
+    .offset-header {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  max-width: 500px;
+  margin: 10px 0;
+  }
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="./css/style.css">
-
-  <title></title>
-  <style>
-.perr{
-  display: block;
+  span.offset-header {
+    display: block;
+    overflow: hidden;
+  }
+  .review{
+    background-color: #fff;
+    opacity: 0.5;
+    color: #000;
+    font-size: 14px;
+  }
+  @keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
+ 
+html, body {
+  height: 100%;
+ }
+html.modal-active, body.modal-active {
+  overflow: hidden;
 }
-@media (max-width: 991.98px) {
-  .perr{
-display: none;  }
-.img-fluid{
-  background-size: cover;
-    background-position: center;
-    height: -webkit-fill-available;
-    position: absolute;
-}  
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+#modal-container.three {
+  z-index: 0;
+  transform: scale(1);
+}
+#modal-container.three .modal-background {
+  background: rgba(0, 0, 0, 0.6);
+}
+#modal-container.three {
+  animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.three + .content {
+  z-index: 1;
+  animation: slideUpLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.three.out{
+  animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  visibility: hidden;
+}
+#modal-container.three.out + .content {
+  animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container .modal-background {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container{
+  position: absolute;
 }
 
-  </style>
-</head>
+#modal-container h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#modal-container p {
+  font-size: 18px;
+  line-height: 22px;
+}
+#modal-container .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container .modal-background .modal .modal-svg rect {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: white;
+  z-index: 0;
+  margin-right: 10rem;
 
-<body>
-      <section class="third">
+}
+.content h1 {
+  padding: 75px 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+}
+.content .buttons {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.content .buttons .button {
+  display: inline-block;
+  text-align: center;
+  width: max-content;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'BODY';
+  color: #efefef;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 3px solid;
+  position: absolute;
+  bottom: 14px;
+}
+.content .buttons .button:hover {
+  color: white;
+}
+@keyframes slideUpLarge {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes slideDownLarge {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+    </style>
+  </head>
+  <body>
+  
+  <section class="second" id="second">
       <div class="outer">
         <div class="inner">
           <div class="bg">
-            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE3a.jpg" class="lazy img-fluid" />
-
-            <div class="section-heading row d-lg-flex justify-content-center align-items-center mx-5">     
-              <div class="col-lg-3 col-3 mx-3 perr">
-                <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
-              </div>     
-              <div class="col-lg-3 col-12 mx-lg-5">
-                <div class="review p-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius.</div>
-              </div>     
-              <div class="col-lg-3 col-3 mx-3 perr">
-                <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
-              </div>     
+            <video autoplay muted loop playsinline class="desk-video" style="top: 0; position: absolute;">
+              <source src="./images/005.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+            <video autoplay muted loop playsinline class="mobile-video" style="top: 0; position: absolute;">
+              <source src="./images/006.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+                <div class="row d-flex text-center flex-column justify-content-center align-items-center popuptext">
+                  <div class="col-lg-10">  
+                  <div> 
+                    <div class="air1"><strong>art</strong> of emotion</div>
+                    <div class="air2">  aura of <strong>Intimacy</strong></div>
+                    <div class="air3">  <strong>romance</strong> of lifetime</div>
+                    </div>  
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="brief"> Weaving our passion into the true essence of love between two souls
+                      for creating an invaluable treasure of memories is our ultimate goal.
+                      Our frames reflect every little shower of expression and our films blooms with passion.
+                      Feeling each little fleeting moments brfore they pass in a flash,
+                      Each smile frozen forever.
+                    </div>  
+                  </div>
+              </div>
+            <!-- <video autoplay muted loop playsinline style="top: 0; position: absolute;">
+              <source src="./images/001.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>    
+            <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+              <h2 class="heading_large gs_reveal"><img src="./images/LOGO 3 copy 2.png" class="img-fluid" loading="lazy" alt=""></h2>
             </div>
+            <div id="modal-container">
+              <video autoplay muted loop playsinline class="desk-video" style="top: 0; position: absolute;">
+                <source src="./images/05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>  
+              <video autoplay muted loop playsinline class="mobile-video" style="top: 0; position: absolute;">
+                <source src="./images/002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>  
+                  <div class="row d-flex text-center flex-column justify-content-center align-items-center popuptext">
+                    <div class="col-lg-10">  
+                    <div> 
+                      <div class="air1"><strong>art</strong> of emotion</div>
+                      <div class="air2">  aura of <strong>Intimacy</strong></div>
+                      <div class="air3">  <strong>romance</strong> of lifetime</div>
+                      </div>  
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="brief"> Weaving our passion into the true essence of love between two souls
+                        for creating an invaluable treasure of memories is our ultimate goal.
+                        Our frames reflect every little shower of expression and our films blooms with passion.
+                        Feeling each little fleeting moments brfore they pass in a flash,
+                        Each smile frozen forever.
+                      </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="content position-absolute">
+              <div class="buttons">
+                <div id="three" class="button">Know More</div>
+                </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
-    <script src="./js/load-image.js"></script>
-</body>
+  
+   
+    <!-- <section class="third">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg" >
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE3a.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/3.jpg" class="lazy mobile-image"/>
 
+            <div class="section-heading row d-lg-flex justify-content-center align-items-center mx-lg-5 d-sm-none">     
+              <div class="col-lg-3 col-3 mx-3 perr">
+                <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
+              </div>     
+              <div class="col-lg-3 col-10 mx-lg-5 reviewcen">
+                <div class="review p-lg-5 perrr">I always loved Indian Weddings but at the same time wanted an urban touch to our pre-wedding story. The groom's understated ensemble and bride's chic mini wedding dress. Just like we are eloping our style.
+                  Those vintage walls and the dilapidated aesthetic constrasted with the glam anti-bride vibes. Exactly what I was going for and @art_intimacy_romance created exactly that for me. This is not a feedback but to tell you how grateful I am to see our vision come true.
+                </div>
+              </div>     
+              <div class="col-lg-3 col-3 mx-3 perr">
+                <div class="review p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</div>
+              </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="fourth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg" >
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/SLIDE4a.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/4.jpg" class="lazy mobile-image"/>
+
+            <a href="photography.html" class="knowmore">Explore Our Stories</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="fifth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg" >
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/Slide5.jpg" class="lazy" />
+
+            <h2 class="section-head"> WE ARE HERE</h2>
+            <div class="position-absolute knowmorei d-flex justify-content-around ">
+            <a class="px-1" href="https://www.fearlessphotographers.com/photographer/3854/sagar-saini"><img src="./images/fearless.png" class="img-fluid w-50" alt=""></a>
+            <a class="px-1" href="https://www.wedmegood.com/profile/Art-Intimacy-Romance-2875747"><img src="./images/wedmegood.png" class="img-fluid w-50" alt=""></a>
+            <a class="px-1" href="https://www.weddingsutra.com/vendor/sagar-saini-films/"><img src="./images/weddingsutra.png" class="img-fluid w-50" alt=""></a>
+            <a class="px-1" href="https://www.instagram.com/art_intimacy_romance?igsh=MTBhd3o3ZGgzcmc3dQ%3D%3D&utm_source=qr"><img src="./images/insta.jpg" class="img-fluid w-50" alt=""></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="sixth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg" >
+            <video autoplay muted loop playsinline class="desk-video" style="top: 0; position: absolute;">
+              <source src="./images/004.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+            <video autoplay muted loop playsinline class="mobile-video" style="top: 0; position: absolute;">
+              <source src="./images/003.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>  
+            <!-- <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/.jpg" class="lazy desk-image"/>
+            <img src="./img/dredgingdistilation_upscaledsmall.webp" data-src="./images/3.jpg" class="lazy mobile-image"/> -->
+
+              <!-- <a href="photography.html" class="knowmore">Explore Our Films</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <div id="preloader"></div>
+
+    <script src="js/load-image.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script src="./js/aos.js"></script>
+  <script src="./js/main.js"></script>
+  
+  </body>
 </html>
